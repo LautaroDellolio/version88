@@ -1,6 +1,7 @@
-import React, { useContext } from 'react'; 
+import React, { useContext } from 'react';
 import { ThemeContext } from "./utils/global.context"
 import { Link } from 'react-router-dom';
+import '../App.css'
 
 
 const Card = () => {
@@ -8,15 +9,18 @@ const Card = () => {
   const { data } = state;
 
   return (
-    <div>
+    <div className='cardContainer'>
       {data.map((item) => (
         <Link to={`/detail/${item.id}`} key={item.id}>
-        <div key={item.id} style={{ background: state.theme.background, color: state.theme.color }}>
-          <h2>{item.name}</h2>
-          <p>Email: {item.email}</p>
-          <p>Phone: {item.phone}</p>
-        </div>
-        
+          {/* style={{ background: state.theme.background, color: state.theme.color }} */}
+          <div key={item.id}  className='card' >
+            <img src="" alt="Photo" />
+            <h2>{item.name}</h2>
+            <p>Email: {item.email}</p>
+            <p>Phone: {item.phone}</p>
+            <button>Add Fav</button>
+          </div>
+
         </Link>
       ))}
     </div>

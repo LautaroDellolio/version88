@@ -10,7 +10,8 @@ const Navbar = () => {
       };
 
     return (
-        <>
+        <>  <div className='styleNavbar'>
+            <img src="" alt="img" />
             <nav>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
@@ -21,6 +22,7 @@ const Navbar = () => {
   }}>Change theme</button>
             </nav>
             <Outlet />
+        </div>
         </>
     )
 }
