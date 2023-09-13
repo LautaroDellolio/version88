@@ -16,6 +16,9 @@ const initialState = {
     data: [], 
     fav: []
 }
+const agregarFavorito =() =>{
+console.log(initialState.fav);
+}
 
 const themeReducer = (state, action) => {
     switch (action.type) {
@@ -30,8 +33,8 @@ const themeReducer = (state, action) => {
                 data: action.payload,
             };
             case "ADD_FAVORITE":
-            return{
-                ...state, fav: action.payload,
+            return{...state, fav : action.payload,
+                agregarFavorito
             }
         default:
             return state;
@@ -48,7 +51,6 @@ export const ThemeProvider = ({ children }) => {
             .then((response) => response.json())
             .then((data) => {
                 dispatch({ type: "SET_DATA", payload: data })
-                console.log(data);
             })
             .catch((error) => {
                 console.error("Error al obtener los dentistas ", error);

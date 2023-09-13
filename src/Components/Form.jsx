@@ -23,7 +23,7 @@ const Form = () => {
     }
     const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
     if (!email.match(emailRegex)) {
-      setMensaje('Por favor, ingrese una dirección de correo electrónico.');
+      setMensaje('Por favor, ingrese una dirección de correo electrónico válido.');
       return;
     }
     setMensaje(`Gracias ${nombre}, te contactaremos lo antes posible vía correo electrónico.`);
@@ -39,7 +39,7 @@ const Form = () => {
                 </div>
                 <div>
                     <label>Email</label>
-                    <input type="email" placeholder="Ingrese su Email" value={email} onChange={handleEmail} />
+                    <input type="text" placeholder="Ingrese su Email" value={email} onChange={handleEmail} />
                 </div>
                 <button>Enviar</button>
             </form>
