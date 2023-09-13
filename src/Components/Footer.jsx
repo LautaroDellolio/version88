@@ -5,7 +5,7 @@ const Footer = () => {
   const { state } = useContext(ThemeContext);
 
   return (
-    <footer style={{ background: state.theme.background, color: state.theme.color }} >
+    <footer >
         <p>Powered by</p>
     </footer>
   )
