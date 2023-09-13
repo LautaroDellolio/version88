@@ -39,6 +39,9 @@ body{
   width: 25vw;
   background-color: aqua;
 }
+.card img{
+  width: 100%;
+}
 .styleForm {
   display: flex;
   flex-direction: column;

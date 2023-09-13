@@ -14,7 +14,7 @@ const Card = () => {
         <Link to={`/detail/${item.id}`} key={item.id}>
           {/* style={{ background: state.theme.background, color: state.theme.color }} */}
           <div key={item.id}  className='card' >
-            <img src="" alt="Photo" />
+            <img src="public/images/doctor.jpg" alt="Photo" />
             <h2>{item.name}</h2>
             <p>Email: {item.email}</p>
             <p>Phone: {item.phone}</p>
