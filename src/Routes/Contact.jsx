@@ -1,10 +1,10 @@
-import React from 'react'
+import Form from "../Components/Form"
+
 
 const Contact = () => {
   return (
-    <div>
-      <h2>Este es el form</h2>
-    </div>
+    
+    <Form/>
   )
 }
 

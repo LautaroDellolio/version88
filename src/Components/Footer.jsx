@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext} from 'react'
+import { ThemeContext  } from './utils/global.context'
 
 const Footer = () => {
+  const { state } = useContext(ThemeContext);
+
   return (
-    <footer>
+    <footer style={{ background: state.theme.background, color: state.theme.color }} >
         <p>Powered by</p>
-        <img src='public/images/DH.png' alt='DH-logo' />
     </footer>
   )
 }

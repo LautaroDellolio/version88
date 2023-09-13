@@ -7,6 +7,7 @@ import Favs from "./Routes/Favs"
 import Detail from "./Routes/Detail"
 import Nopage from "./Routes/Nopage"
 import { ThemeProvider} from "./Components/utils/global.context"
+import Card from "./Components/Card"
 
 
 
@@ -18,6 +19,7 @@ function App() {
     <ThemeProvider>
       <BrowserRouter>
         <Navbar />
+        {/* <Card/> */}
         <Routes >
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />

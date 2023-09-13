@@ -42,7 +42,7 @@ export const ThemeProvider = ({ children }) => {
         fetch("https://jsonplaceholder.typicode.com/users")
             .then((response) => response.json())
             .then((data) => {
-                setDentist(data);
+                dispatch({ type: "SET_DATA", payload: data })
                 console.log(data);
             })
             .catch((error) => {
