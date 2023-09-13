@@ -14,6 +14,7 @@ export const themes = {
 const initialState = {
     theme: themes.dark, 
     data: [], 
+    fav: []
 }
 
 const themeReducer = (state, action) => {
@@ -28,6 +29,10 @@ const themeReducer = (state, action) => {
                 ...state,
                 data: action.payload,
             };
+            case "ADD_FAVORITE":
+            return{
+                ...state, fav: action.payload,
+            }
         default:
             return state;
     }

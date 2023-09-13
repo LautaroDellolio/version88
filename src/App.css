@@ -37,7 +37,8 @@ body{
   border-radius: 15px;
   margin: 10px;
   width: 25vw;
-  background-color: aqua;
+  background-color: grey;
+  color: black;
 }
 .card img{
   width: 100%;

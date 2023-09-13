@@ -8,13 +8,18 @@ const Detail = () => {
   const { id } = useParams();
 
   return (
-    <div style={{ background: state.theme.background, color: state.theme.color }}>
-      <p>{data[id].name}</p>
-      <p>{data[id].username}</p>
-      <p>{data[id].email}</p>
-      <p>{data[id].phone}</p>
-      <p>{data[id].website}</p>
+    <>
+    <div style={{ background: state.theme.background, color: state.theme.color}}>
+    <div  className='card'>
+      <p>{data[id-1].name}</p>
+      <p>{data[id -1].username}</p>
+      <p>{data[id -1].email}</p>
+      <p>{data[id -1].phone}</p>
+      <p>{data[id -1].website}</p>
     </div>
+
+    </div>
+    </>
   )
 }
 
