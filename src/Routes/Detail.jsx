@@ -12,7 +12,7 @@ const Detail = () => {
       <div style={{
         background: state.theme.background,
         color: state.theme.color,
-        padding: state.theme.padding
+        paddingTop: state.theme.padding
       }}>
         <div className='card' style={{ margin: "auto" }}>
           <img src="\public\images\doctor.jpg"></img>

@@ -15,7 +15,7 @@ const Favs = () => {
       background: state.theme.background,
       color: state.theme.color,
       minHeight: "85vh",
-      padding: state.theme.padding
+      paddingTop: state.theme.padding
     }}>
       <h1>Favoritos</h1>
       <div className='cardContainer'>

@@ -1,83 +1,79 @@
 #root {
-  /* max-width: 1280px; */
   margin: 0 auto;
   padding: 0;
   text-align: center;
   box-sizing: border-box;
 }
-body{
+/* body {
   display: block;
-}
+} */
 
-.styleNavbar{
+.styleNavbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 20px 10px;
 }
-.styleNavbar nav{
+.styleNavbar nav {
   display: flex;
   align-items: baseline;
-  
 }
-.styleNavbar nav li{
+.styleNavbar nav li {
   text-decoration: none;
   list-style: none;
   margin: 0px 10px;
   color: black;
 }
-.styleNavbar img{
+.styleNavbar img {
   width: 20vh;
   height: 20vh;
   margin: 0px 5vw;
 }
-.styleNavbar nav li a{
+.styleNavbar nav li a {
   text-decoration: none;
   font-size: 1.5em;
   color: rgb(255, 252, 252);
 }
-
-.cardContainer{
+.cardContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 .card {
-  padding: 1em;
-  border: 20px solid rgb(119, 186, 222);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 20px solid rgb(119, 186, 222); */
   border-radius: 15px;
-  margin: 10px;
-  width: 15vw;
+  margin: 5px;
+  width: 18%;
   background-color: rgb(119, 186, 222);
   color: black;
 }
-.card img{
+.card img {
   width: 100%;
+  border-radius: 15px;
 }
-.card a{
+.card a {
   text-decoration: none;
   color: black;
 }
 .styleForm {
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  height: 80vh;
+  align-items: center;
   font-size: 1.5rem;
-  /* gap: 10px; */
 }
 
 .styleForm div {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
-  /* width: 100%; */
+  align-items: flex-start;
   max-width: 300px;
   margin: 10px;
-  
 }
 .styleForm label {
-  font-weight: bold; 
+  font-weight: bold;
   padding: 0 5px;
   margin: 10px auto;
 }
@@ -85,9 +81,7 @@ body{
   padding: 5px;
   border: 1px solid #ddd;
   border-radius: 3px;
-  /* width: 96%; */
 }
 .styleForm button {
   margin: 10px;
 }
-

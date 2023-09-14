@@ -2,24 +2,20 @@ import React, { createContext, useReducer, useEffect } from "react";
 
 export const themes = {
     light: {
-        background: "white",
+        background: "#b5aba9",
         color: "black",
-        padding: "10vh"
+        padding: "1vh"
     },
     dark: {
-        background: "black",
+        background: "#003636",
         color: "white",
-        padding: "10vh"
+        padding: "1vh"
     }
 };
 
 const initialState = {
     theme: themes.dark, 
     data: [], 
-    fav: []
-}
-const agregarFavorito =() =>{
-console.log(initialState.fav);
 }
 
 const themeReducer = (state, action) => {
@@ -34,10 +30,6 @@ const themeReducer = (state, action) => {
                 ...state,
                 data: action.payload,
             };
-            case "ADD_FAVORITE":
-            return{...state, fav : action.payload,
-                agregarFavorito
-            }
         default:
             return state;
     }
