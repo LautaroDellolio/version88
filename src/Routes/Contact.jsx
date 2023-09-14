@@ -1,9 +1,7 @@
 import Form from "../Components/Form"
 
-
 const Contact = () => {
   return (
-    
     <Form/>
   )
 }
