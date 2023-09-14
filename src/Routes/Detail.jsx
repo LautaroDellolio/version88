@@ -9,15 +9,15 @@ const Detail = () => {
 
   return (
     <>
-    <div style={{ background: state.theme.background, color: state.theme.color}}>
-    <div  className='card'>
+    <div style={{ background: state.theme.background, color: state.theme.color, padding: state.theme.padding}}>
+    <div  className='card' style={{margin:"auto"}}>
+      <img src="\public\images\doctor.jpg"></img>
       <p>{data[id-1].name}</p>
       <p>{data[id -1].username}</p>
       <p>{data[id -1].email}</p>
       <p>{data[id -1].phone}</p>
       <p>{data[id -1].website}</p>
     </div>
-
     </div>
     </>
   )

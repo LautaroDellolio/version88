@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <footer >
-        <p>Powered by</p>
+        <p>Powered by Lautaro Dell´Olio & Agustin Ras </p>
     </footer>
   )
 }

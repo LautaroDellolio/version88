@@ -3,11 +3,13 @@ import React, { createContext, useReducer, useEffect } from "react";
 export const themes = {
     light: {
         background: "white",
-        color: "black"
+        color: "black",
+        padding: "10vh"
     },
     dark: {
         background: "black",
-        color: "white"
+        color: "white",
+        padding: "10vh"
     }
 };
 

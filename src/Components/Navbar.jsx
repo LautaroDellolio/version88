@@ -11,9 +11,10 @@ const Navbar = () => {
 
     return (
         <>  <div className='styleNavbar'>
-            <img src="" alt="img" />
+            <img src="public\images\icono-de-avatar-de-doctor.png" alt="img"/>
+            <h1 style={{fontFamily:"'Borel', cursive", fontSize:"3vw"}}>Consultorio Raulito</h1>
             <nav>
-                <li><Link to="/">Home</Link></li>
+                <li ><Link to="/">Home</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
                 <li><Link to="/favs">Favs</Link></li>
                 <button onClick={toggleTheme} style={{

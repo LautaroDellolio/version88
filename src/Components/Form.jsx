@@ -29,19 +29,19 @@ const Form = () => {
     setMensaje(`Gracias ${nombre}, te contactaremos lo antes posible vía correo electrónico.`);
   };
   return (
-    <div style={{ background: state.theme.background, color: state.theme.color }} className="styleForm">
+    <div style={{ background: state.theme.background, color: state.theme.color, padding: state.theme.padding }} className="styleForm">
       <h2>Gracias por Contactarnos</h2>
             <p>Por favor ingresa tus datos</p>
             <form onSubmit={sendForm}>
                 <div>
                     <label>Nombre</label>
-                    <input type="text" placeholder="Ingrese su nombre" value={nombre} onChange={handleNombre} />
+                    <input style={{background: state.theme.background, color: state.theme.color}} type="text" placeholder="Ingrese su nombre" value={nombre} onChange={handleNombre} />
                 </div>
                 <div>
                     <label>Email</label>
-                    <input type="text" placeholder="Ingrese su Email" value={email} onChange={handleEmail} />
+                    <input style={{background: state.theme.background, color: state.theme.color}} type="text" placeholder="Ingrese su Email" value={email} onChange={handleEmail} />
                 </div>
-                <button>Enviar</button>
+                <button >Enviar</button>
             </form>
             {mensaje && <p>{mensaje}</p>}
     </div>

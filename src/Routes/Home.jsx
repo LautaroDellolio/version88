@@ -9,8 +9,8 @@ const Home = () => {
   const { state } = useContext(ThemeContext);
 
   return (
-    <div style={{ background: state.theme.background, color: state.theme.color }}>
-      <h1>Home</h1>
+    <div style={{ background: state.theme.background, color: state.theme.color, padding: state.theme.padding}}>
+      <h1>Listado de Médicos</h1>
       <Card/>
     </div>
   )

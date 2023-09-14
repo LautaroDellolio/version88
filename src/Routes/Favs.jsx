@@ -1,16 +1,22 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { ThemeContext } from "../Components/utils/global.context"
+
 
 
 const Favs = () => {
   const { state } = useContext(ThemeContext);
   const localFavorites = JSON.parse(localStorage.getItem("favorites"))
 
+  const [bandera, setBandera] = useState(localFavorites ? false : true)
+  const limpiarFavoritos = () => {
+    localStorage.clear();
+    setBandera(true)
+    
+  }
   return (
-
-    <div style={{ background: state.theme.background, color: state.theme.color }}>
+    <div style={{ background: state.theme.background, color: state.theme.color, minHeight: "85vh", padding: state.theme.padding }}>
       <div className='cardContainer'>
-        {localFavorites === null ? (
+        {bandera? (
           <h2>No hay favoritos</h2>
         ) : (
           localFavorites.map((favorite, index) => {
@@ -27,7 +33,7 @@ const Favs = () => {
         )
         }
       </div>
-      <button onClick={()=>localStorage.clear()}>Eliminar todo</button>
+      <button onClick={limpiarFavoritos}>Eliminar todo</button>
     </div>
   )
 }
