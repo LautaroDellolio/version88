@@ -7,7 +7,7 @@ export const themes = {
         padding: "1vh"
     },
     dark: {
-        background: "#003636",
+        background: "#000000",
         color: "white",
         padding: "1vh"
     }
